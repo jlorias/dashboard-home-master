@@ -1,7 +1,9 @@
 body{
-  background: url(../images/scel_wp.jpg);
+  background-image: url(../images/scel_wp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 150%;
+  height: 100%;
 }
 
 .ui.borderless.topmenu.menu {
@@ -66,44 +68,63 @@ html{
 
 .applebox{
   background-color: red;
+  background-image: url("../images/apples.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px 300px;
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
   text-align: left;
-
+  color: white;
 
 }
 
 .bumblebox{
   background-color: gold;
+  background-image: url("../images/bumblebee.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px 200px;
+  background-position: center;
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
   text-align: left;
+  color: white;
+
 }
 
 .cranbox{
   background-color: maroon;
+  background-image: url("../images/cranberry.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px 300px;
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
   text-align: left;
+  color: white;
+
 }
 
 .guavabox{
   background-color: yellowgreen;
+  background-image: url("../images/guava.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px 300px;
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
   text-align: left;
+  color: white;
+
 }
 
 
