@@ -67,7 +67,6 @@ html{
 }
 
 .applebox{
-  background-color: red;
   background-image: url("../images/apples.jpg");
   background-repeat: no-repeat;
   background-size: 500px 300px;
@@ -78,7 +77,21 @@ html{
   font-size: 30px;
   text-align: left;
   color: white;
+}
 
+.applebox .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+
+.applebox:hover .after {
+  display: block;
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .bumblebox{
