@@ -3,7 +3,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 .ui.borderless.topmenu.menu {
@@ -66,78 +66,78 @@ html{
   grid-row-gap: 20px;
 }
 
-.applebox{
-  background-image: url("../images/apples.jpg");
+.apple.container {
+  /* background-image: url("../images/apples.jpg");
   background-repeat: no-repeat;
-  background-size: 500px 300px;
+  background-size: 500px 300px; */
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
-  text-align: left;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
   color: white;
 }
 
-.applebox .after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  color: #FFF;
-}
-
-.applebox:hover .after {
-  display: block;
-  background-color: rgba(0, 0, 0, .6);
-}
-
-.bumblebox{
-  background-color: gold;
-  background-image: url("../images/bumblebee.jpg");
+.bumblebee.container {
+  /* background-image: url("../images/bumblebee.jpg");
   background-repeat: no-repeat;
   background-size: 400px 200px;
   background-position: center;
+  */
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
-  text-align: left;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
   color: white;
 
 }
 
-.cranbox{
-  background-color: maroon;
-  background-image: url("../images/cranberry.jpg");
+.cranberry.container{
+/*  background-image: url("../images/cranberry.jpg");
   background-repeat: no-repeat;
-  background-size: 500px 300px;
+  background-size: 500px 300px; */
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
-  text-align: left;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
   color: white;
-
 }
 
-.guavabox{
-  background-color: yellowgreen;
-  background-image: url("../images/guava.jpg");
+.guava.container {
+/*  background-image: url("../images/guava.jpg");
   background-repeat: no-repeat;
-  background-size: 500px 300px;
+  background-size: 500px 300px; */
   padding: 2px;
   height: 150px;
   width: 400px;
   font-family: "Abel", sans-serif;
   font-size: 30px;
-  text-align: left;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
   color: white;
-
 }
 
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
 
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 20px;
+}
