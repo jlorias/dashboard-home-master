@@ -14,6 +14,8 @@ body{
   width: 100%;
   scroll-snap-align: center;
   font-weight: bold;
+  display: inline-block;
+  list-style-type: none;
 }
 
 .footer-background {
