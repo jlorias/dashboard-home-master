@@ -16,7 +16,7 @@
 }
 
 .w3-container.w3-padding-32.w3-black {
-  background-image: url('../images/temperature.png');
+  background-image: url('../images/temperature.jpg');
   background-repeat: no-repeat;
   background-size: 1200px 400px;
   padding: 2px;
@@ -46,25 +46,27 @@
 }
 
 .w3-container.w3-padding-32.w3-green {
-  background-image: url('../images/uptime.png');
+  background-image: url('../images/uptime.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 2px;
   position: relative;
   text-align: center;
   border-radius: 25px;
+  background-position: 0;
 }
 
 .w3-container.w3-padding-32.w3-brown {
    background-image: url('../images/location.png');
    background-repeat: no-repeat;
    background-size: 100%;
-   image-rendering:
    padding: 2px;
    position: relative;
    text-align: center;
    border-radius: 25px;
- }
+  background-position: 0;
+
+}
 
 .top-left {
   font-size: 30px;
@@ -78,6 +80,17 @@
   bottom: 8px;
   right: 16px;
   font-size: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: aqua;
+  text-shadow: 2px 2px 5px #000000;
+  blur-radius: 10px;
 }
 
 
