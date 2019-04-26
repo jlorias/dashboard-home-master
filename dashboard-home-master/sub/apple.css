@@ -1,6 +1,5 @@
 .w3-container.w3-black.w3-padding-32.w3-padding-large {
-  background-image: url('../images/scel_wp.jpg');
-  background-repeat: no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), repeat-y, url('../images/apples.jpg');
   background-size: 100%;
   border-radius: 0px;
 }
@@ -57,13 +56,13 @@
 }
 
 .w3-container.w3-padding-32.w3-brown {
-   background-image: url('../images/location.png');
-   background-repeat: no-repeat;
-   background-size: 100%;
-   padding: 2px;
-   position: relative;
-   text-align: center;
-   border-radius: 25px;
+  background-image: url('../images/location.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  border-radius: 25px;
   background-position: 0;
 
 }

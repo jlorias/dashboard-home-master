@@ -1,146 +1,102 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
+<html lang="en">
+<title>APPLE</title>
 <meta charset="UTF-8">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abel">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-  body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-  .w3-bar-block .w3-bar-item {padding:20px}
-</style>
-<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+<link href="apple.css" rel="stylesheet">
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-     class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Abel", sans-serif}
+  .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+  .w3-third img:hover{opacity: 1}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <a href="../main/main.html"><img class="scel pic" src="../images/SCEL_logo.png" alt="SCEL Home" id="logo">
+    <h3 class="w3-padding-64 w3-center" style="font-size:30px"><b>DASHBOARD<br>HOME</b></h3></a>
+  <a href="../sub/appledata.html" onclick="w3_close()" class="w3-bar-item w3-button">APPLE</a>
+  <a href="../sub/bumblebeedata.html" onclick="w3_close()" class="w3-bar-item w3-button">BUMBLEBEE</a>
+  <a href="../sub/cranberrydata.html" onclick="w3_close()" class="w3-bar-item w3-button">CRANBERRY</a>
+  <a href="../sub/guavadata.html" onclick="w3_close()" class="w3-bar-item w3-button">GUAVA</a>
 </nav>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16">Mail</div>
-    <div class="w3-center w3-padding-16">My Food</div>
-  </div>
-</div>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SCEL</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<div class="w3-main" style="margin-left:300px">
 
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  <!-- Avg section -->
+  <div class="w3-container w3-black w3-padding-32 w3-padding-large" id="average">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center" style="font-size:30px"><b>OVERALL SUMMARY</b></h4>
+      <h4 class="w3-center" style="font-size:20px"><b>LAST UPDATED: February 08, 2019 - 16:20 HST</b></h4>
+      <div class="w3-section">
+      </div>
     </div>
-    <div class="w3-quarter">
-      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
-      <h3>Let Me Tell You About This Steak</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    <hr class="w3-opacity">
+    <!-- AVG SOLAR IRRADIANCE -->
+    <div class="w3-container w3-padding-32 w3-red tint" id="irradiance" style="width:1172px; height:300px">
+      <div style= "padding: 10px" class = "top-left"> SOLAR IRRADIANCE </div>
+      <div style= "padding: 10px" class = "centered"> 1368 W/M<sup>2</sup> </div>
+      <a href="../sub/appledata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
     </div>
-    <div class="w3-quarter">
-      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
-      <h3>Cherries, interrupted</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
+
+    <hr class="w3-opacity">
+    <!-- AVG TEMPERATURE -->
+    <div class="w3-container w3-padding-32 w3-black tint" id="temperature" style="width:1172px; height:300px">
+      <div style= "padding: 10px" class = "top-left"> TEMPERATURE </div>
+      <div style= "padding: 10px" class = "centered">78<sup>&deg</sup>F / 26<sup>&deg</sup>C</div>
+      <a href="../sub/bumbledata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
     </div>
-    <div class="w3-quarter">
-      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+
+    <hr class="w3-opacity">
+    <!-- AVG PRESSURE -->
+    <div class="w3-container w3-padding-32 w3-pink tint" id="pressure" style="width:1172px; height:300px">
+      <div style= "padding: 10px" class = "top-left"> PRESSURE </div>
+      <div style= "padding: 10px" class = "centered"> 1016 MB </div>
+      <a href="../sub/crandata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
     </div>
+
+    <hr class="w3-opacity">
+    <!-- AVG HUMIDITY -->
+    <div class="w3-container w3-padding-32 w3-purple tint" id="humidity" style="width:1172px; height:300px">
+      <div style= "padding:10px" class = "top-left"> HUMIDITY </div>
+      <div style= "padding: 10px" class = "centered"> 67% </div>
+      <a href="../sub/guavadata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+    <hr class="w3-opacity">
+    <!--NODE UPTIME -->
+    <div class="w3-container w3-padding-32 w3-green tint" id="uptime" style="width:1172px; height:300px">
+      <div style= "padding:10px" class = "top-left"> NODE UPTIME </div>
+      <div style= "padding: 10px" class = "centered"> 22 HRS </div>
+      <a href="../sub/guavadata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+    <hr class="w3-opacity">
+    <!--NODE LOCATION -->
+    <div class="w3-container w3-padding-32 w3-brown tint" id="location" style="width:1172px; height:300px">
+      <div style= "padding:10px" class = "top-left"> NODE LOCATION </div>
+      <div style= "padding: 10px" class = "centered"> EAST-WEST CORNER </div>
+      <a href="../sub/guavadata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
   </div>
-
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
-      <h3>All I Need Is a Popsicle</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
-      <h3>Salmon For Your Skin</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
-      <h3>Le French</h3>
-      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-
-  <hr id="about">
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">
-    <h3>About Me, The Food Man</h3><br>
-    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>I am Who I Am!</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    </div>
-  </div>
-  <hr>
-
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-      </p>
-    </div>
-  </footer>
 
   <!-- End page content -->
 </div>
@@ -149,12 +105,16 @@
   // Script to open and close sidebar
   function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
   }
 
   function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
   }
+
 </script>
+
 
 </body>
 </html>

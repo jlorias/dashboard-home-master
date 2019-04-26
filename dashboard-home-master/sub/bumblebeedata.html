@@ -1,10 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<title>BUMBLEBEE</title>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abel">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+<link href="bumblebee.css" rel="stylesheet">
+
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Abel", sans-serif}
+  .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+  .w3-third img:hover{opacity: 1}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <a href="../main/main.html"><img class="scel pic" src="../images/SCEL_logo.png" alt="SCEL Home" id="logo">
+    <h3 class="w3-padding-64 w3-center" style="font-size:30px"><b>DASHBOARD<br>HOME</b></h3></a>
+    <a href="../sub/appledata.html" onclick="w3_close()" class="w3-bar-item w3-button">APPLE</a>
+    <a href="../sub/bumblebeedata.html" onclick="w3_close()" class="w3-bar-item w3-button">BUMBLEBEE</a>
+    <a href="../sub/cranberrydata.html" onclick="w3_close()" class="w3-bar-item w3-button">CRANBERRY</a>
+    <a href="../sub/guavadata.html" onclick="w3_close()" class="w3-bar-item w3-button">GUAVA</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SCEL</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Avg section -->
+  <div class="w3-container w3-black w3-padding-32 w3-padding-large" id="average">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center" style="font-size:30px"><b>OVERALL SUMMARY</b></h4>
+      <h4 class="w3-center" style="font-size:20px"><b>LAST UPDATED: February 08, 2019 - 16:20 HST</b></h4>
+      <div class="w3-section">
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <!-- AVG SOLAR IRRADIANCE -->
+    <div class="w3-container w3-padding-32 w3-red tint" id="irradiance" style="width:1172px; height:300px">
+      <div style= "padding: 10px" class = "top-left"> SOLAR IRRADIANCE </div>
+      <div style= "padding: 10px" class = "centered"> 1368 W/M<sup>2</sup> </div>
+      <a href="../sub/appledata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+    <hr class="w3-opacity">
+    <!-- AVG TEMPERATURE -->
+    <div class="w3-container w3-padding-32 w3-black tint" id="temperature" style="width:1172px; height:300px">
+      <div style= "padding: 10px" class = "top-left"> TEMPERATURE </div>
+      <div style= "padding: 10px" class = "centered">78<sup>&deg</sup>F / 26<sup>&deg</sup>C</div>
+      <a href="../sub/bumbledata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+    <hr class="w3-opacity">
+    <!-- AVG PRESSURE -->
+    <div class="w3-container w3-padding-32 w3-pink tint" id="pressure" style="width:1172px; height:300px">
+      <div style= "padding: 10px" class = "top-left"> PRESSURE </div>
+      <div style= "padding: 10px" class = "centered"> 1016 MB </div>
+      <a href="../sub/crandata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+    <hr class="w3-opacity">
+    <!-- AVG HUMIDITY -->
+    <div class="w3-container w3-padding-32 w3-purple tint" id="humidity" style="width:1172px; height:300px">
+      <div style= "padding:10px" class = "top-left"> HUMIDITY </div>
+      <div style= "padding: 10px" class = "centered"> 67% </div>
+      <a href="../sub/guavadata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+    <hr class="w3-opacity">
+    <!--NODE UPTIME -->
+    <div class="w3-container w3-padding-32 w3-green tint" id="uptime" style="width:1172px; height:300px">
+      <div style= "padding:10px" class = "top-left"> NODE UPTIME </div>
+      <div style= "padding: 10px" class = "centered"> 22 HRS </div>
+      <a href="../sub/guavadata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+    <hr class="w3-opacity">
+    <!--NODE LOCATION -->
+    <div class="w3-container w3-padding-32 w3-brown tint" id="location" style="width:1172px; height:300px">
+      <div style= "padding:10px" class = "top-left"> NODE LOCATION </div>
+      <div style= "padding: 10px" class = "centered"> EAST-WEST CORNER </div>
+      <a href="../sub/guavadata.html" style="color:white"><div style= "padding: 10px" class = "bottom-right"> View Team Data ></div></a>
+    </div>
+
+  </div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+</script>
+
 
 </body>
 </html>
