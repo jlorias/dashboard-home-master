@@ -6,9 +6,9 @@
 }
 
 .w3-container.w3-padding-32.w3-red {
-  background-image: url('../images/apples.jpg');
+  background-image: url('../images/solar-irradiance.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1200px 500px;
   padding: 2px;
   position: relative;
   text-align: center;
@@ -16,7 +16,7 @@
 }
 
 .w3-container.w3-padding-32.w3-black {
-  background-image: url('../images/bumblebee.jpg');
+  background-image: url('../images/temperature.png');
   background-repeat: no-repeat;
   background-size: 1200px 400px;
   padding: 2px;
@@ -26,7 +26,7 @@
 }
 
 .w3-container.w3-padding-32.w3-pink {
-  background-image: url('../images/cranberry.jpg');
+  background-image: url('../images/pressure.png');
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 2px;
@@ -36,7 +36,17 @@
 }
 
 .w3-container.w3-padding-32.w3-purple {
-  background-image: url('../images/guava.jpg');
+  background-image: url('../images/humidity.jpg');
+  background-repeat: no-repeat;
+  background-size: 1200px 400px;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.w3-container.w3-padding-32.w3-green {
+  background-image: url('../images/uptime.png');
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 2px;
@@ -44,6 +54,17 @@
   text-align: center;
   border-radius: 25px;
 }
+
+.w3-container.w3-padding-32.w3-brown {
+   background-image: url('../images/location.png');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   image-rendering:
+   padding: 2px;
+   position: relative;
+   text-align: center;
+   border-radius: 25px;
+ }
 
 .top-left {
   font-size: 30px;
@@ -57,4 +78,35 @@
   bottom: 8px;
   right: 16px;
   font-size: 20px;
+}
+
+
+.tint {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.5);
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  z-index:3;
+  border-radius: 25px;
+}
+.tint:hover:before {
+  background: none;
+}
+.tint h2, .tint p {
+  position: relative;
+  z-index: 4;
 }
