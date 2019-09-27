@@ -5,8 +5,17 @@
   border-radius: 0px;
 }
 
-.w3-container.w3-padding-32.w3-red {
-  background-image: url('../images/solar-irradiance.jpg');
+.w3-container.w3-padding-32.w3-green {
+   background-image: url('../images/humidity.jpg');
+   background-repeat: no-repeat;
+   background-size: 1200px 400px;
+   padding: 2px;
+   position: relative;
+   text-align: center;
+   border-radius: 25px;
+}
+
+.w3-col.m6.w3-margin-bottom.w3-red {
   background-repeat: no-repeat;
   background-size: 1200px 500px;
   padding: 2px;
@@ -15,8 +24,7 @@
   border-radius: 25px;
 }
 
-.w3-container.w3-padding-32.w3-black {
-  background-image: url('../images/temperature.jpg');
+.w3-col.m6.w3-margin-bottom.w3-black {
   background-repeat: no-repeat;
   background-size: 1200px 400px;
   padding: 2px;
@@ -25,8 +33,7 @@
   border-radius: 25px;
 }
 
-.w3-container.w3-padding-32.w3-pink {
-  background-image: url('../images/pressure.png');
+.w3-col.m6.w3-margin-bottom.w3-blue {
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 2px;
@@ -35,8 +42,7 @@
   border-radius: 25px;
 }
 
-.w3-container.w3-padding-32.w3-purple {
-  background-image: url('../images/humidity.jpg');
+.w3-col.m6.w3-margin-bottom.w3-purple {
   background-repeat: no-repeat;
   background-size: 1200px 400px;
   padding: 2px;
@@ -45,29 +51,15 @@
   border-radius: 25px;
 }
 
-.w3-container.w3-padding-32.w3-green {
-  background-image: url('../images/uptime.jpg');
+.w3-container.w3-padding-32.w3-yellow {
+  background-image: url('../images/location.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1200px 400px;
   padding: 2px;
   position: relative;
   text-align: center;
   border-radius: 25px;
-  background-position: 0;
 }
-
-.w3-container.w3-padding-32.w3-brown {
-   background-image: url('../images/location.png');
-   background-repeat: no-repeat;
-   background-size: 100%;
-   padding: 2px;
-   position: relative;
-   text-align: center;
-   border-radius: 25px;
-  background-position: 0;
-
-}
-
 .top-left {
   font-size: 30px;
   position: absolute;
@@ -79,7 +71,7 @@
   position: absolute;
   bottom: 8px;
   right: 16px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .centered {
@@ -87,7 +79,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
+  font-size: 15px;
   color: aqua;
   text-shadow: 2px 2px 5px #000000;
   blur-radius: 10px;
