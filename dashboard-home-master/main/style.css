@@ -6,9 +6,9 @@
 }
 
 .w3-container.w3-padding-32.w3-green {
-  background-image: url('../images/humidity.jpg');
+  background-image: url('../images/graph.png');
   background-repeat: no-repeat;
-  background-size: 1200px 400px;
+  background-size: 1200px 500px;
   padding: 2px;
   position: relative;
   text-align: center;
@@ -52,7 +52,7 @@
 }
 
 .w3-container.w3-padding-32.w3-yellow {
-  background-image: url('../images/location.png');
+  background-image: url('../images/map.jpg');
   background-repeat: no-repeat;
   background-size: 1200px 400px;
   padding: 2px;
